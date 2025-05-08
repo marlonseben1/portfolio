@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Cores */
+
+:root {
+    --cor-primaria: #4339de;
+    --cor-secundaria: #767676;
+}
+
+/* Global */
+
+html {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    margin-bottom: 500rem; /* Será removido no final */
+}
+
+* {
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+}
+
+.circulo-roxo {
+    background-color: var(--cor-primaria);
+    border-radius: 50%;
+  }
+
+/* Seção header - mobile */
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 1rem, 1rem, 1rem, ;
+}
