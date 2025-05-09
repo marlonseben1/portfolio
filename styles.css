@@ -68,7 +68,6 @@ nav {
     header a {
         text-decoration: none;
         color: inherit;
-        margin-right: 5rem;
     }
 
     header a:hover {
@@ -84,6 +83,8 @@ nav {
         display: flex;
         align-items: center;
         justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 2rem;
         font-size: 1.7rem;
         font-weight: bold;
         width: 100%;
@@ -96,7 +97,7 @@ nav {
         align-items: center;
         justify-content: center;
         text-align: center;
-        width: 80%;
+        width: 100%;
         border: 1.5px solid black;
         border-radius: 2rem;
         padding: 0.8rem;
