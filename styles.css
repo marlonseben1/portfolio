@@ -5,6 +5,7 @@
 :root {
   --cor-primaria: #4339de;
   --cor-primaria-variacao: #493cf8;
+  --cor-primaria-variacao2: #442cca;
   --cor-secundaria: #767676;
 }
 
@@ -356,10 +357,14 @@ nav {
 .fatos {
   color: white;
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   text-align: center;
   margin-left: 5%;
   margin-right: 5%;
+}
+
+#primeiro-fato-sobre-mim {
+  font-size: 1.8rem;
 }
 
 .icones.sobre-mim{
@@ -373,17 +378,24 @@ nav {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 2rem;
+  border: 2px solid white;
+  border-radius: 16px;
+  padding: 1rem;
+  width: 80%;
+  justify-self: center;
   margin-top: 5rem;
+  background-color: var(--cor-primaria-variacao2);
 }
 
-#icone-html, #icone-css, #icone-js, #icone-python, #icone-sql, #icone-git {
-  height: 5rem;
-  width: 5rem;
+#icone-html, #icone-css, #icone-js, #icone-python, #icone-sql, #icone-git, #icone-figma, #icone-sass {
+  height: 3rem;
+  width: 3rem;
   transition: transform 0.3s ease;
+  
 }
 
-#icone-html:hover, #icone-css:hover, #icone-js:hover, #icone-python:hover, #icone-sql:hover, #icone-git:hover {
-transform: scale(1.1);
+#icone-html:hover, #icone-css:hover, #icone-js:hover, #icone-python:hover, #icone-sql:hover, #icone-git:hover, #icone-figma:hover, #icone-sass:hover {
+transform: scale(1.2);
 }
 
 /* Seção sobre mim - web */
