@@ -218,16 +218,32 @@ nav {
         left: 50%;
         transform: translateX(-50%);
     }
-    
-    
+}
 
+/* Seção projetos - mobile */
 
+#projetos {
+    text-align: center;
+}
 
+#titulo-secao-projetos-mobile {
+    font-size: 3.4rem;
+    font-weight: bolder;
+    color: var(--cor-primaria);
+    margin-bottom: 1.5rem;
+}
 
+.web-only.projetos {
+    display: none;
+}
 
+/* Seção projetos - web */
 
+@media (min-width: 768px) {
 
-
+    .mobile-only.projetos {
+        display: none;
+    }
 
 
 }
