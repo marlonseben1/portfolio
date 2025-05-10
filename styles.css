@@ -322,7 +322,7 @@ nav {
 #sobre-mim {
   display: block;
   background-color: var(--cor-primaria);
-  height: 52rem;
+  height: 70rem;
 }
 
 #titulo-secao-sobre-mim {
@@ -360,4 +360,44 @@ nav {
   text-align: center;
   margin-left: 5%;
   margin-right: 5%;
+}
+
+.icones.sobre-mim{
+  display: block;
+}
+
+#icones-secao-sobre-mim {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+#icone-html, #icone-css, #icone-js, #icone-python, #icone-sql, #icone-git {
+  height: 5rem;
+  width: 5rem;
+  transition: transform 0.3s ease;
+}
+
+#icone-html:hover, #icone-css:hover, #icone-js:hover, #icone-python:hover, #icone-sql:hover, #icone-git:hover {
+transform: scale(1.1);
+}
+
+/* Seção sobre mim - web */
+
+@media (min-width: 768px) {
+
+  #sobre-mim {
+    height: 60rem;
+  }
+
+  .fatos {
+    width: 30rem;
+    justify-self: center;
+  }
+
+
 }
