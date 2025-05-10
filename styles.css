@@ -233,6 +233,36 @@ nav {
     margin-bottom: 1.5rem;
 }
 
+#circulo-roxo-ultimo-projeto {
+    background-color: var(--cor-primaria);
+    border-radius: 50%;
+    position: relative;
+    margin-top: 15%;
+    margin-bottom: 1rem;
+    width: 20rem;
+    height: 20rem;
+    justify-self: center;
+}
+
+#ultimo-projeto-titulo {
+    color: var(--cor-secundaria);
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+#botao-github {
+    color: var(--cor-primaria);
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.8rem;
+    border: none;
+    background: none;
+    justify-self: center;
+    cursor: pointer;
+}
+
+
 .web-only.projetos {
     display: none;
 }
