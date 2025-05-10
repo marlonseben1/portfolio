@@ -18,11 +18,12 @@ html {
 body {
   margin: 0;
   margin-bottom: 500rem; /* Será removido no final */
+  overflow-x: hidden;
 }
 
 * {
   font-family: "Raleway", sans-serif;
-  box-sizing: border-box;
+  box-sizing: border-box; 
 }
 
 .circulo-roxo {
@@ -225,8 +226,9 @@ nav {
 
 #titulo-secao-projetos-mobile,
 #titulo-secao-projetos-web {
-  font-size: 3.4rem;
+  font-size: 3rem;
   font-weight: bolder;
+  width: 70%;
   color: var(--cor-primaria);
   margin-bottom: 1.5rem;
 }
@@ -235,7 +237,6 @@ nav {
 #circulo-roxo-projeto-esquerda,
 #circulo-roxo-projeto-direita {
   position: relative;
-  margin: 5rem 5rem;
   width: 20rem;
   height: 20rem;
   border-radius: 50%;
@@ -275,8 +276,6 @@ nav {
   }
 
 }
-  
-
 
 @media (min-width: 768px) {
   #projetos {
@@ -300,6 +299,11 @@ nav {
     gap: 5rem;
   }
 
+  #cards-de-projetos > * {
+    max-width: 90vw;
+  }
+  
+
   .mobile-only.projetos {
     display: none;
   }
@@ -311,4 +315,49 @@ nav {
   .web-e-mobile.web-only.projetos {
     display: block;
   }
+}
+
+/* Seção sobre mim - mobile */
+
+#sobre-mim {
+  display: block;
+  background-color: var(--cor-primaria);
+  height: 52rem;
+}
+
+#titulo-secao-sobre-mim {
+  font-size: 3.4rem;
+  font-weight: bolder;
+  padding-top: 5rem;
+  margin-top: 8.5rem;
+  margin-bottom: 1.5rem;
+  align-self: center;
+  justify-self: center;
+  color: white;
+}
+
+#foto-marlon {
+  display: block;
+  margin: 4rem auto 1rem auto;
+  width: 18rem;
+  height: 18rem;
+  border: 3px solid white;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+#foto-marlon:hover {
+  transform: scale(1.1);
+}
+
+.fatos {
+  color: white;
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
 }
